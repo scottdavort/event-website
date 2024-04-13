@@ -1,9 +1,8 @@
-import React from 'react';
 import Navigation from '@/components/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import Footer from '@/components/footer';
-
+import MapComponent from '@/components/mapComponent';
 
 const Location = () => {
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY; // import from .env
@@ -49,14 +48,7 @@ const Location = () => {
           <div className="h-64 bg-gray-300 text-center flex justify-center items-center">
                   {/* Google Maps Embed */}
 
-                    <iframe
-                        width="100%"
-                        height="450"
-                        style={{ border: "0" }}
-                        loading="lazy"
-                        allowFullScreen
-                        src={`https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=Palms+Casino+Resort+Las+Vegas`}
-                    ></iframe>
+                  <MapComponent />
       
           </div>
         </div>
