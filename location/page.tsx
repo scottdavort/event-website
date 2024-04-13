@@ -4,7 +4,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Footer from '@/components/footer';
 
-const Page = () => {
+
+const Location = () => {
+  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY; // import from .env
+
   return (
     <div className='bg-darkblue'>
       {/* Navigation */}
@@ -42,18 +45,18 @@ const Page = () => {
 
         {/* Google Maps Placeholder */}
         <div className="mb-8">
-          {/* Replace this div with your Google Maps component */}
+          {/*  Google Maps component */}
           <div className="h-64 bg-gray-300 text-center flex justify-center items-center">
                   {/* Google Maps Embed */}
-      
-        <iframe
-          width="100%"
-          height="100%"
-          style={{ border: "0" }}
-          loading="lazy"
-          allowFullScreen
-          src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyDn28mU939__29rFMJnD5mKuQr8vsBr67U&q=Palms+Casino+Resort+Las+Vegas`}
-        ></iframe>
+
+                    <iframe
+                        width="100%"
+                        height="450"
+                        style={{ border: "0" }}
+                        loading="lazy"
+                        allowFullScreen
+                        src={`https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=Palms+Casino+Resort+Las+Vegas`}
+                    ></iframe>
       
           </div>
         </div>
@@ -76,4 +79,4 @@ const Page = () => {
   );
 }
 
-export default Page;
+export default Location;
