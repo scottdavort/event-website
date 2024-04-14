@@ -1,4 +1,4 @@
-import React from 'react';
+'use client';
 import Navigation from '@/components/navigation';
 import Footer from '@/components/footer';
 import { Typography, Box, Button } from '@mui/material';
@@ -31,7 +31,7 @@ const ThankYouPage = () => {
                     Your registration for the International Super Secret Spy Conference 2024 has been successfully received.
                 </Typography>
                 <Typography sx={{ fontSize: 20 }} gutterBottom>
-                    You will receive an email with your conference access details shortly. Prepare to dive into the world of espionage and uncover secrets that will redefine global intelligence. We are excited to see you at the grand assembly of the world's most enigmatic figures—heroes and villains alike.
+                    You will receive an email with your conference access details shortly. Prepare to dive into the world of espionage and uncover secrets that will redefine global intelligence. We are excited to see you at the grand assembly of the world&apos;s most enigmatic figures—heroes and villains alike.
                 </Typography>
                 
                 <Button variant="contained" color="primary" sx={{ mt: 3 }}>

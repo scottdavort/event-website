@@ -1,7 +1,6 @@
 'use client';
 import Navigation from '@/components/navigation';
 import Layout from './layout';
-import { motion } from 'framer-motion';
 import Footer from '@/components/footer';
 import LandingPage from '@/components/landingPage';
 

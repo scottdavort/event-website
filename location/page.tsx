@@ -1,3 +1,4 @@
+'use client';
 import Navigation from '@/components/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
